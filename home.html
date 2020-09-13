@@ -1,0 +1,189 @@
+<html>
+    <head>
+        <title>Qiswatul Ulfah</title>
+        <link rel="stylesheet" type="text/css" href="beranda.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  </meta> 
+    </head>
+
+<body>
+<!--Navigasi-->
+<nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="login.html">Logout</a></li>
+    </ul>
+</nav>
+
+<header id="sejarah" class="card">
+    <img src="image/header2.jpg" class="featured-image" alt="sejarah">
+</header>
+
+<!--Main-->
+<main> 
+
+    <!--Menggunakan elemen div-->
+    <div id="content">
+    
+    <!--Masing masing konten menggunakan artikel-->
+    
+    <!--Artikel Konten pertama-->
+    <article id="sejarah" class="card">
+    <h2 id="sejarah">PUISI</h2>
+
+    <pre>
+
+        Rembulan
+
+
+    Rembulan itu teduh, 
+    Ia dapat menenangkanmu dikala sepi 
+    Rembulan itu hangat, 
+    Ia dapat menyentuh hatimu dikala gundah
+    Warna jingga yang cantik
+    Menyinari sudut ruang di hati
+    Menjauh, mendekat
+    Terdiam diatas batu
+
+    Berkatalah sebait
+    Aku akan mendengarkanmu
+    Berkatalah sebait
+    Aku tidak akan meninggalkanmu
+
+
+
+                        
+                         Karya: Qiswatul Ulfah
+    </pre>
+    </article>
+     
+
+    <!--Artikel Konten kedua-->
+    <article id="syair" class="card">
+    <h2 id="SYAIR">SYAIR</h2>
+
+    <pre>
+
+        Berbalas kecewa
+
+    
+    Menikmati kesendirianku
+    Tanpa ada kamu disisiku
+    Ku tak pernah menduga
+    Kau tinggalkan aku karena dia
+
+    Mengapa cintaku ini
+    Berbalas kecewa
+    Kesetiaanku berhadiahkan luka
+    Hancurkan hatiku
+    Hingga tak tersisa
+    Kau membuatku sakit dan terluka
+
+    Kini aku telah sendiri
+    Tanpa ada bayangmu dihatiku
+    Ku tak pernah menduga
+    Kau lupakan aku karena dia
+
+    Mengapa cintaku ini
+    Berbalas kecewa
+    Kesetiaanku berhadiahkan luka
+    Hancurkan hatiku
+    Hingga tak tersisa
+    Kau membuatku sakit dan terluka
+
+
+
+                             Karya: Qiswatul Ulfah
+    </pre>
+
+    </article>
+     
+    
+    </div>
+
+    <!--aside-->
+    <aside>
+        <article class="profile card">
+        <div class="digitaljam">
+            <div class="kotakjam jam jamdigital">
+                <p id="jam"></p>
+            </div>
+            <div class="kotakjam jam jamdigital">
+                <p id="menit"></p>
+            </div>
+            <div class="kotakjam jam jamdigital">
+                <p id="detik"></p>
+            </div>
+        </div>
+        </article>
+    </aside>
+
+
+    <aside>
+        <article class="profile card">
+
+        <header>
+        <h2 align="center">About Me</h2>
+
+        <figure>
+            <img src="image/profil.jpg" class="profile-img" >
+            <figcaption align="center"> </figcaption>
+        </figure>
+
+        </header>
+
+        <section>
+            <h3>Informasi Lainnya</h3>
+            <table>
+                <tr>
+                    <th>Nama</th>
+                    <td>:</td>
+                    <td>Qiswatul Ulfah</td>
+                </tr>
+                <tr>
+                    <th>Asal</th>
+                    <td>:</td>
+                    <td>Semarang</td>
+                </tr>
+                <tr>
+                    <th>Lahir</th>
+                    <td>:</td>
+                    <td>27 Juni 1997</td>
+                </tr>
+                <tr>
+                    <th>Pekerjaan</th>
+                    <td>:</td>
+                    <td>Pegawai Non ASN</td>
+                </tr>
+                <tr>
+                    <th> Telepon</th>
+                    <td>:</td>
+                    <td>0857 1237 0115</td>
+                </tr>
+            </table>
+        </section>
+
+        </article>
+    </aside>
+</main> 
+
+<!--Konten footer-->
+<footer>
+        <p>Belajar Dasar Pemrograman Web &#169; 2020, Dicoding Academy</p>
+</footer>
+</body>
+
+<script>
+    window.setTimeout("jam()",1000);
+
+    function jam(){
+        var jam = new Date();
+        setTimeout("jam(),1000");
+        document.getElementById("jam").innerHTML = jam.getHours();
+        document.getElementById("menit").innerHTML = jam.getMinutes();
+        document.getElementById("detik").innerHTML = jam.getSeconds();
+    }
+</script>
+
+</body>
+</html>
